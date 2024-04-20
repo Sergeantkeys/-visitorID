@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background: url(project-2\public\website-background-templates.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    }
+
+    #img{
+    width: 8cm;
+    height: 6cm;
+    margin-top: 1.8cm;
+    }
+
+    .container {
+    display: flex;
+    max-width: fit-content;
+    max-height: fit-content;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    #registrationForm {
+    margin-left: 20px;
+    margin-right: 50px;
+    }
+
+    h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    }
+
+    .input-group {
+    margin-bottom: 15px;
+    }
+
+    .input-group label {
+    display: block;
+    margin-bottom: 8px;
+    }
+
+    .input-group input[type="text"],
+    .input-group input[type="email"],
+    .input-group input[type="contact"] {
+        width: 100%;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+    }
+
+    .input-group input[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+        background-color: #007BFF;
+        color: #ffffff;
+        cursor: pointer;
+    }
+
+    .input-group input[type="submit"]:hover {
+        background-color: #0056b3;
+    }
+
+    </style>
+</head>
+<body></body>
+    <div class="container">
+        <img src="<%=project-2\public\business-woman-busy-clipart-md-910619943.png%>" id="img" alt="">
+        <form id="registrationForm" action="/register" method="post">
+            <h2>Pre-Register and <br> Get your Visitor ID</h2>
+            <div class="input-group">
+                <label for="Name">Name</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div class="input-group">
+                <label for="Contact No.">Contact No.</label>
+                <input type="Contact" id="Contact" name="Contact" required>
+            </div>
+            
+            <div class="input-group">
+                <input type="submit" value="Register">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

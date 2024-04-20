@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url(website-background-templates.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+}
+
+#img{
+    width: 8cm;
+    height: 6cm;
+    margin-top: 1.8cm;
+}
+
+.container {
+    display: flex;
+    max-width: fit-content;
+    max-height: fit-content;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+#registrationForm {
+    margin-left: 20px;
+    margin-right: 50px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.input-group input[type="text"],
+.input-group input[type="email"],
+.input-group input[type="contact"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.input-group input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #007BFF;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.input-group input[type="submit"]:hover {
+    background-color: #0056b3;
+}
